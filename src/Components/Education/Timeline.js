@@ -23,7 +23,7 @@ const Timeline = ({ reverse = false }) => {
           name="Pondicherry Engineering College"
           study="Bachelor of Technology in Computer Science Engineering - 6.7 CGPA"
         />
-        <TimelineContent reverse={true} date="2017-2021" />
+        <TimelineContent reverse={true} date="2014-2017" />
         <TimelineContent
           name="Rajiv Gandhi Government English MediumHigh School"
           study="10th Class - 8.7 CGPA"
@@ -57,7 +57,7 @@ const Timeline = ({ reverse = false }) => {
       {/*  */}
       {/* dates */}
       <div className="date-section">
-        <TimelineDate date="2014-2017" />
+        <TimelineDate date="2017-2021" />
         <TimelineDate
           reverse={true}
           name="Dr B R Ambedkar Polytechnic College"
