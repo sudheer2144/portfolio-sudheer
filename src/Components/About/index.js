@@ -13,7 +13,7 @@ const AboutSection = () => {
     >
       <motion.h1
         className="section-heading"
-        initial={{ x: 100 }}
+        initial={{ x: 50 }}
         whileInView={{ x: 0 }}
         transition={{ duration: 1 }}
         viewport={{ once: false }}

@@ -1,9 +1,18 @@
-import React from "react";
+import React, { useState } from "react";
 import "./style.css";
 import { motion } from "framer-motion";
 import BurgerMenuComponent from "../BurgerMenu/BurgerMenu";
 
 const Header = () => {
+  const [ShowNameHeader, setShowNameHeader] = useState(false);
+  window.addEventListener("scroll", checkScrollPosition);
+  function checkScrollPosition() {
+    if (window.scrollY > 200) {
+      setShowNameHeader(true);
+    } else if (window.scrollY < 200) {
+      setShowNameHeader(false);
+    }
+  }
   return (
     <div className="header">
       <div className="details-section">
@@ -14,12 +23,13 @@ const Header = () => {
           transition={{ duration: 0.5, delay: 0.8 }}
         ></motion.div>
         <motion.h1
-          className="first-name"
+          className={`first-name ${ShowNameHeader && " show-name-header"}`}
           initial={{ opacity: 0, x: -30 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.5, delay: 0.4 }}
+          // ref={nameh1}
         >
-          First <span className="last-name">Last</span>
+          Sudheer <span className="last-name">G</span>
         </motion.h1>
       </div>
       <div className="links-section">

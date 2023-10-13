@@ -116,7 +116,15 @@
         height: fit-content;
     }
 
+    .date-section {
+        padding: 5rem 0;
+    }
+
     .date {
         width: fit-content;
+    }
+
+    .line-circles {
+        padding: 5.5rem 0;
     }
 }

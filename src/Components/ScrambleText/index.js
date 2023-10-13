@@ -4,7 +4,7 @@ import "./style.css";
 
 const ScrambleComponent = ({ text }) => {
   return (
-    <div className="scramble-txt-container">
+    <span className="scramble-txt-container">
       <Scramble
         autoStart={true}
         speed="medium"
@@ -22,7 +22,7 @@ const ScrambleComponent = ({ text }) => {
           },
         ]}
       />
-    </div>
+    </span>
   );
 };
 

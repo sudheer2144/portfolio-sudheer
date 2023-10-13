@@ -22,7 +22,9 @@
 }
 
 @media screen and (max-width:1080px) {
-    .about-section {}
+    .about-section {
+        /* padding-top: 0; */
+    }
 
     .about-section h1 {
         font-size: 3rem;

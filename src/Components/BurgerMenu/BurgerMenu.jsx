@@ -2,7 +2,7 @@ import React, { useRef, useState } from "react";
 import "./styles.css";
 import { AnimatePresence, motion } from "framer-motion";
 
-const BurgerMenuComponent = ({ logoutHandleClick, isLoading }) => {
+const BurgerMenuComponent = () => {
   const burgerMenuRef = useRef();
   const [showPaper, setShowPaper] = useState(false);
 

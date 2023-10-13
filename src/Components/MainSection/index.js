@@ -14,16 +14,16 @@ const MainSection = () => {
     >
       <h1>Sudheer Geddadi</h1>
       <motion.p
-        initial={{ x: 100 }}
-        whileInView={{ x: 0 }}
+        initial={{ opacity: 0, x: 10 }}
+        whileInView={{ opacity: 1, x: 0 }}
         transition={{ duration: 1 }}
         viewport={{ once: false }}
       >
         <ScrambleComponent text="Full Stack Developer" />
       </motion.p>
       <motion.p
-        initial={{ x: -100 }}
-        whileInView={{ x: 0 }}
+        initial={{ opacity: 0, x: -10 }}
+        whileInView={{ opacity: 1, x: 0 }}
         transition={{ duration: 1 }}
         viewport={{ once: false }}
       >

@@ -8,7 +8,7 @@ const EducationComponent = () => {
     <div className="edu-container" id="education">
       <motion.h1
         className="section-heading"
-        initial={{ opacity: 0, x: -100 }}
+        initial={{ opacity: 0, x: -50 }}
         whileInView={{ opacity: 1, x: 0 }}
         transition={{ duration: 1 }}
         viewport={{ once: false }}
@@ -16,9 +16,6 @@ const EducationComponent = () => {
         Education
       </motion.h1>
       <Timeline />
-      {/* <TimelineDetails />
-      <TimelineDetails reverse={true}/>
-      <TimelineDetails /> */}
     </div>
   );
 };

@@ -29,11 +29,17 @@
     border-radius: 50%;
 }
 
-h1 {
+.first-name {
     color: var(--white);
+    opacity: 0 !important;
+    transition: all 0.5s;
 }
 
-h1 span {
+.show-name-header {
+    opacity: 1 !important;
+}
+
+.last-name {
     color: var(--blue);
 }
 

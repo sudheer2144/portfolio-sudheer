@@ -21,6 +21,10 @@
 }
 
 
+::selection {
+    background-color: var(--blue);
+    color: var(--white);
+}
 
 ::-webkit-scrollbar {
     display: none;
