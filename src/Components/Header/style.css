@@ -1,0 +1,133 @@
+.header {
+    width: 100%;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 0.5rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color: var(--black);
+}
+
+.details-section {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.details-section:hover {
+    cursor: pointer;
+}
+
+.img-icon {
+    border: 5px solid var(--white);
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+}
+
+h1 {
+    color: var(--white);
+}
+
+h1 span {
+    color: var(--blue);
+}
+
+.links-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* gap: 1rem; */
+}
+
+.header a {
+    text-decoration: none;
+    color: var(--white);
+    font-size: 1.2rem;
+    padding: 0.4rem;
+    border-radius: 2rem;
+    min-width: 7rem;
+    text-align: center;
+    transition: all 0.5s;
+}
+
+.header a:hover {
+    background: var(--blue);
+}
+
+.burger-menu-container {
+    display: none;
+}
+
+
+.drawer-container {
+    padding: 1rem 0;
+}
+
+
+.drawer-links-section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+    min-width: 20vw;
+    /* padding: 1rem; */
+}
+
+.drawer-links-section a {
+    text-decoration: none;
+    color: var(--blue);
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    transition: all 0.3s;
+    font-size: 1.5rem;
+    padding: 0.5rem;
+}
+
+.drawer-links-section a:hover {
+    background: var(--blue);
+    color: var(--white);
+}
+
+.drawer-close-btn {
+    display: flex;
+    justify-content: flex-end;
+    padding: 0 1rem 0 0;
+}
+
+
+.MuiDrawer-paper {
+    color: var(--white);
+}
+
+.MuiButton-root path {
+    color: var(--blue);
+}
+
+.MuiPaper-root {
+    background: var(--not-black) !important;
+}
+
+@media screen and (max-width:1080px) {
+
+    .header {
+        padding: 0 0.5rem;
+    }
+
+    .links-section {
+        display: none;
+    }
+
+    .burger-menu-container {
+        display: block;
+    }
+
+    .drawer-links-section {
+        width: 50vw;
+    }
+}

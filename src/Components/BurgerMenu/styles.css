@@ -1,0 +1,58 @@
+.burger-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.burger-menu .bar {
+    border: 2px solid var(--white);
+    width: 1.5rem;
+    border-radius: 0.5rem;
+    transition: all 0.3s;
+}
+
+.change .bar1 {
+    opacity: 1;
+    transform: translateY(7px) rotate(45deg);
+}
+
+.change .bar3 {
+    opacity: 1;
+    transform: translateY(-11px) rotate(-45deg);
+}
+
+.change .bar2 {
+    opacity: 0;
+}
+
+.main-paper {
+    position: fixed;
+    padding: 1rem;
+    background: var(--black);
+    top: 5rem;
+    right: 0;
+    height: 100vh;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.main-paper a {
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: var(--white);
+    padding: 0.5rem;
+    border-radius: 1rem;
+    transition: all 0.3s;
+    min-width: 8rem;
+    text-align: center;
+}
+
+.main-paper .active {
+    background-color: var(--theme);
+}

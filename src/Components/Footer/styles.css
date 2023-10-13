@@ -1,0 +1,6 @@
+.footer-section {
+    height: 5rem;
+    width: 100%;
+    background-color: var(--black);
+    bottom: 0;
+}

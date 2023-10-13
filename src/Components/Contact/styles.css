@@ -1,0 +1,9 @@
+.contact-section-main {
+    padding-top: 5rem;
+    height: 100vh;
+    width: 100%;
+    border: 2px solid red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
