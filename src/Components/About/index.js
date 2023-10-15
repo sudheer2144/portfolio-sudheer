@@ -26,12 +26,9 @@ const AboutSection = () => {
         transition={{ duration: 1 }}
         viewport={{ once: false }}
       >
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo
-        repellendus, dolorem sint enim eligendi iusto iure veritatis deleniti
-        deserunt aspernatur optio labore, provident sed maiores dolor at non.
-        Iusto id error explicabo culpa molestias doloremque, perferendis
-        necessitatibus quis. Molestias quis cupiditate neque repudiandae, fugiat
-        incidunt nam voluptatum obcaecati blanditiis animi.
+        Self-motivated and hardworking person seeking for an opportunity to work
+        in a challenging environment to prove my skills and utilizemy knowledge
+        and intelligence in the growth of the organization.
       </motion.p>
     </motion.div>
   );

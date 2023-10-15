@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Mukta:wght@200;300;400;500;600;700;800&family=Mulish:wght@300&family=Varela&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Mukta:wght@200;300;400;500;600;700;800&family=Mulish:wght@300&family=Varela&display=swap'); */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Mukta:wght@200;300;400;500;600;700;800&family=Mulish:wght@300&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Varela&display=swap');
 
 * {
@@ -7,7 +7,8 @@
     box-sizing: border-box;
     /* font-family: 'Mukta'; */
     font-family: 'Space Mono', monospace;
-    color: var(--white);
+    /* color: var(--white); */
+    /* transition: all 0.5s; */
 }
 
 :root {
@@ -18,6 +19,18 @@
     --green-blue: #379689;
     --black: #0e0e0e;
     --not-black: #1a1a1a;
+    --fixed-white: #edf5e1;
+}
+
+[data-theme="light"] {
+    --blue: #049746;
+    --white: #151515;
+    --green: #074380;
+    --lite-green: #8ee4af;
+    --green-blue: #379689;
+    --black: #355070;
+    --not-black: #e7e7e7;
+    --fixed-white: #edf5e1;
 }
 
 

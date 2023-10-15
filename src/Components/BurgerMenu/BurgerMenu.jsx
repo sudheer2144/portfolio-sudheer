@@ -63,7 +63,7 @@ const BurgerMenuComponent = () => {
             >
               Projects
             </motion.a>
-            <motion.a
+            {/* <motion.a
               href="#contact"
               initial={{ opacity: 0, x: 200 }}
               animate={{ opacity: 1, x: 0 }}
@@ -71,7 +71,7 @@ const BurgerMenuComponent = () => {
               onClick={changeToCross}
             >
               Contact
-            </motion.a>
+            </motion.a> */}
           </motion.div>
         )}
       </AnimatePresence>

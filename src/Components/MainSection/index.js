@@ -11,6 +11,7 @@ const MainSection = () => {
       //   whileInView={{ x: 0 }}
       //   transition={{ duration: 1 }}
       //   viewport={{ once: false }}
+      id="main-section"
     >
       <h1>Sudheer Geddadi</h1>
       <motion.p
@@ -19,16 +20,16 @@ const MainSection = () => {
         transition={{ duration: 1 }}
         viewport={{ once: false }}
       >
-        <ScrambleComponent text="Full Stack Developer" />
+        <ScrambleComponent text="MERN-Stack Developer" />
       </motion.p>
-      <motion.p
+      {/* <motion.p
         initial={{ opacity: 0, x: -10 }}
         whileInView={{ opacity: 1, x: 0 }}
         transition={{ duration: 1 }}
         viewport={{ once: false }}
       >
         <ScrambleComponent text="MERN Stack" />
-      </motion.p>
+      </motion.p> */}
     </div>
   );
 };

@@ -1,6 +1,61 @@
 .footer-section {
-    height: 5rem;
+    height: 10rem;
     width: 100%;
     background-color: var(--black);
     bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem;
+    color: var(--fixed-white) !important;
+}
+
+.footer-links-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    width: 100%;
+}
+
+.footer-links-section a {
+    text-decoration: none;
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 4px solid var(--blue);
+    padding: 0.2rem;
+    border-radius: 0.5rem;
+    color: var(--fixed-white) !important;
+}
+
+
+.mail-section {
+    display: flex;
+    gap: 0.5rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.mail {}
+
+.symb {
+    color: rgb(92, 92, 92);
+}
+
+.footer-section p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+@media screen and (max-width:1080px) {
+    .footer-links-section {
+        gap: 2rem;
+    }
 }

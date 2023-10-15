@@ -17,7 +17,7 @@ function App() {
       <EducationComponent />
       <WorkSection />
       <ProjectSection />
-      <ContactSection />
+      {/* <ContactSection /> */}
       <FooterSection />
     </div>
   );

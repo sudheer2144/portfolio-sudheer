@@ -6,16 +6,17 @@
     justify-content: space-between;
     gap: 1rem;
     padding: 0.5rem 0;
-    position: sticky;
+    position: fixed;
     top: 0;
     z-index: 100;
     background-color: var(--black);
+    color: var(--fixed-white) !important;
 }
 
 .details-section {
     display: flex;
     align-items: center;
-    gap: 1rem;
+    gap: 0.2rem;
 }
 
 .details-section:hover {
@@ -23,16 +24,25 @@
 }
 
 .img-icon {
-    border: 5px solid var(--white);
     width: 3rem;
     height: 3rem;
     border-radius: 50%;
 }
 
+.img-icon img {
+    border-radius: 50%;
+    width: 3rem;
+    height: 3rem;
+    border: 4px solid var(--blue) !important;
+}
+
+.darkmode-img {}
+
 .first-name {
-    color: var(--white);
+    /* color: var(--white); */
     opacity: 0 !important;
     transition: all 0.5s;
+    font-weight: 400;
 }
 
 .show-name-header {
@@ -41,6 +51,27 @@
 
 .last-name {
     color: var(--blue);
+    font-weight: 600;
+}
+
+.links-switch-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.switch {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.switch-icon {
+    width: 1.5rem;
+    height: 1.5rem;
 }
 
 .links-section {
@@ -52,7 +83,7 @@
 
 .header a {
     text-decoration: none;
-    color: var(--white);
+    color: var(--fixed-white) !important;
     font-size: 1.2rem;
     padding: 0.4rem;
     border-radius: 2rem;
@@ -97,26 +128,13 @@
 
 .drawer-links-section a:hover {
     background: var(--blue);
-    color: var(--white);
+    /* color: var(--white); */
 }
 
 .drawer-close-btn {
     display: flex;
     justify-content: flex-end;
     padding: 0 1rem 0 0;
-}
-
-
-.MuiDrawer-paper {
-    color: var(--white);
-}
-
-.MuiButton-root path {
-    color: var(--blue);
-}
-
-.MuiPaper-root {
-    background: var(--not-black) !important;
 }
 
 @media screen and (max-width:1080px) {
