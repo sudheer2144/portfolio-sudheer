@@ -1,17 +1,18 @@
-import React, { useEffect, useState } from "react";
+import React, { createContext, useContext, useEffect, useState } from "react";
 import "./style.css";
 import { motion } from "framer-motion";
 import BurgerMenuComponent from "../BurgerMenu/BurgerMenu";
 import logoLight from "../../Images/logo-light.png";
 import logoDark from "../../Images/logo-dark.png";
 import { BsFillLightbulbFill, BsFillLightbulbOffFill } from "react-icons/bs";
+import { themeContext } from "../../ThemeContext";
 
 const Header = () => {
+  const { theme, setTheme } = useContext(themeContext);
+
+  //
   const [ShowNameHeader, setShowNameHeader] = useState(false);
   const [darkMode, setDarkMode] = useState(true);
-  // const [modeSwitch,setModeSwitch] = useState()
-
-  // console.log(document.querySelectorAll("[class*='section']")[5]);
 
   window.addEventListener("scroll", checkScrollPosition);
   function checkScrollPosition() {
@@ -33,8 +34,10 @@ const Header = () => {
   useEffect(() => {
     if (!darkMode) {
       document.documentElement.setAttribute("data-theme", "light");
+      setTheme("light");
     } else {
       document.documentElement.setAttribute("data-theme", "");
+      setTheme("dark");
     }
   }, [darkMode]);
 

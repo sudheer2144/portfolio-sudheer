@@ -1,5 +1,5 @@
 .footer-section {
-    height: 10rem;
+    height: 8rem;
     width: 100%;
     background-color: var(--black);
     bottom: 0;
@@ -11,7 +11,7 @@
     color: var(--fixed-white) !important;
 }
 
-.footer-links-section {
+/* .footer-links-section {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -30,7 +30,7 @@
     padding: 0.2rem;
     border-radius: 0.5rem;
     color: var(--fixed-white) !important;
-}
+} */
 
 
 .mail-section {
@@ -54,8 +54,4 @@
     gap: 0.5rem;
 }
 
-@media screen and (max-width:1080px) {
-    .footer-links-section {
-        gap: 2rem;
-    }
-}
+@media screen and (max-width:1080px) {}

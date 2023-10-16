@@ -13,7 +13,7 @@ const TimelineContent = ({
       {reverse && (
         <motion.div
           className="date"
-          initial={{ x: -10 }}
+          initial={{ x: -100 }}
           whileInView={{ x: 0 }}
           transition={{ duration: 0.5 }}
           viewport={{ once: false }}
@@ -24,7 +24,7 @@ const TimelineContent = ({
       {!reverse && (
         <motion.div
           className="content"
-          initial={{ x: -10 }}
+          initial={{ x: -100 }}
           whileInView={{ x: 0 }}
           transition={{ duration: 0.5 }}
           viewport={{ once: false }}

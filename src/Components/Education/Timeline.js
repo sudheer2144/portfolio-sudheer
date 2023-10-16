@@ -34,21 +34,21 @@ const Timeline = ({ reverse = false }) => {
       <div className="line-circles">
         <motion.div
           className="circle"
-          initial={{ x: -50 }}
+          initial={{ x: -100 }}
           whileInView={{ x: 0 }}
           transition={{ duration: 0.5 }}
           viewport={{ once: false }}
         ></motion.div>
         <motion.div
           className="circle"
-          initial={{ x: 50 }}
+          initial={{ x: 100 }}
           whileInView={{ x: 0 }}
           transition={{ duration: 0.5 }}
           viewport={{ once: false }}
         ></motion.div>
         <motion.div
           className="circle"
-          initial={{ x: -50 }}
+          initial={{ x: -100 }}
           whileInView={{ x: 0 }}
           transition={{ duration: 0.5 }}
           viewport={{ once: false }}

@@ -1,12 +1,15 @@
 .main-section {
     display: flex;
-    width: 100%;
+    width: 100% !important;
     height: 100vh;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding-top: 5rem;
     color: var(--white) !important;
+    gap: 1rem;
+    /* border: 1px solid red; */
+    overflow: hidden;
 }
 
 .main-section h1 {
@@ -16,10 +19,17 @@
     text-align: center;
 }
 
+.main-section p {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .main-section span {
     font-size: 7rem !important;
     font-family: 'Space Mono', monospace;
-    width: 100%;
+    width: 100% !important;
     text-align: center;
 }
 
@@ -28,9 +38,85 @@
     -webkit-text-stroke: 2px var(--white);
 }
 
+.profiles-links-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    width: 100%;
+    height: 4rem;
+    margin-top: 1rem;
+    overflow: hidden;
+}
+
+.profiles-links-section a {
+    text-decoration: none;
+    /* font-size: 1.2rem; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 4px solid var(--blue); */
+    padding: 0.2rem;
+    /* border-radius: 0.5rem; */
+    color: var(--white) !important;
+}
+
+.logos {
+    height: 3rem;
+    width: 3rem;
+    transition: all 0.3s;
+}
+
+.logos:hover {
+    scale: 1.2;
+}
+
+.resume-img-div {
+    width: 10rem;
+    height: 12rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.resume-img {
+    /* display: none; */
+    height: 12rem;
+    width: 10rem;
+    border-radius: 1rem;
+    object-fit: cover;
+}
+
+.resume-img-div .external-link-span {
+    position: absolute;
+    width: 0rem !important;
+    height: 0rem !important;
+    background-color: var(--blue);
+    display: inline-block;
+    transition: all .5s;
+    opacity: 0.5;
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+.resume-img-div:hover .external-link-span {
+    width: 10rem !important;
+    height: 12rem !important;
+}
+
+.external-link-logo {
+    opacity: 1 !important;
+    width: 30%;
+    height: 30%;
+    color: var(--fixed-white);
+}
+
 @media screen and (max-width:1080px) {
     .main-section {
-        gap: 5rem;
+        gap: 3rem;
     }
 
     .main-section h1 {
@@ -41,4 +127,21 @@
         font-size: 2rem !important;
         /* display: none; */
     }
+
+    .profiles-links-section {
+        gap: 2rem;
+    }
+
+    .resume-img-div .external-link-span {
+        /* display: block; */
+        width: 10rem !important;
+        height: 12rem !important;
+        display: flex !important;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--black);
+        border-radius: 1rem !important;
+    }
+
+    .resume-img-div:hover span {}
 }

@@ -2,8 +2,127 @@
     padding-top: 5rem;
     height: 100vh;
     width: 100%;
-    border: 2px solid red;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+    overflow: hidden;
+}
+
+.projects-section {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+    justify-content: space-evenly;
+}
+
+.project {
+    width: 30%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    /* cursor: pointer; */
+}
+
+.project-img {
+    width: 100%;
+    height: 15rem;
+    border-radius: 0.2rem;
+    border: 2px solid var(--black);
+}
+
+.project p {
+    text-align: center;
+    color: var(--white);
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.external-link-span {
+    position: absolute;
+    width: 0rem !important;
+    height: 0rem !important;
+    background-color: var(--blue);
+    display: inline-block;
+    transition: all 0.5s;
+    opacity: 0.5;
+    border-radius: 1rem;
+    overflow: hidden;
+    text-align: center;
+    cursor: pointer;
+}
+
+.project:hover .external-link-span {
+    width: 30rem !important;
+    height: 30rem !important;
+}
+
+.project .external-link-logo {
+    opacity: 1 !important;
+    width: 30%;
+    height: 30%;
+    margin-top: 40%;
+}
+
+@media screen and (max-width:1080px) {
+
+    .project-section-main {
+        gap: 2rem;
+    }
+
+
+    .projects-section {
+        flex-direction: column;
+        justify-content: flex-start !important;
+        /* align-items: center; */
+        gap: 1.5rem;
+    }
+
+    .project {
+        flex-direction: row;
+        height: 10rem;
+        width: 100%;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 0.2rem;
+        width: 100%;
+    }
+
+    .project-img {
+        width: 12rem;
+        height: 10rem;
+        border-radius: 0.5rem;
+    }
+
+    .project p {
+        text-align: start;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 6;
+        -webkit-box-orient: vertical;
+        height: fit-content;
+    }
+
+    .external-link-span {
+        width: 12rem !important;
+        height: 10rem !important;
+        background-color: var(--black);
+        border-radius: 0.5rem !important;
+    }
+
+    .project .external-link-logo {
+        margin-top: 3.5rem;
+    }
+
+    .project:hover .external-link-span {
+        width: 12rem !important;
+        height: 10rem !important;
+    }
 }

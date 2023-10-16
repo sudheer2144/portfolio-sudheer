@@ -18,7 +18,7 @@ const ScrambleComponent = ({ text }) => {
           },
           {
             action: "-",
-            type: "random",
+            type: "forward",
           },
         ]}
       />

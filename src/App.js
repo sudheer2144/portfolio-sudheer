@@ -1,3 +1,4 @@
+import { createContext, useState } from "react";
 import "./App.css";
 import AboutSection from "./Components/About";
 import ContactSection from "./Components/Contact";
@@ -7,19 +8,24 @@ import Header from "./Components/Header";
 import MainSection from "./Components/MainSection";
 import ProjectSection from "./Components/Projects";
 import WorkSection from "./Components/Work";
+import { themeContext } from "./ThemeContext";
 
 function App() {
+  const [theme, setTheme] = useState("theme");
+
   return (
-    <div className="App">
-      <Header />
-      <MainSection />
-      <AboutSection />
-      <EducationComponent />
-      <WorkSection />
-      <ProjectSection />
-      {/* <ContactSection /> */}
-      <FooterSection />
-    </div>
+    <themeContext.Provider value={{ theme: theme, setTheme: setTheme }}>
+      <div className="App">
+        <Header />
+        <MainSection />
+        <AboutSection />
+        <EducationComponent />
+        <WorkSection />
+        <ProjectSection />
+        {/* <ContactSection /> */}
+        <FooterSection />
+      </div>
+    </themeContext.Provider>
   );
 }
 

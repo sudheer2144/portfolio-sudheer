@@ -5,6 +5,7 @@
     justify-content: center;
     align-items: center;
     color: var(--fixed-white) !important;
+    overflow: hidden;
 }
 
 
@@ -41,6 +42,7 @@
     flex-direction: column;
     align-items: center;
     gap: 1rem;
+    /* border: 2px solid red; */
 }
 
 .main-paper a {

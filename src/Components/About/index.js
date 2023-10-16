@@ -13,7 +13,7 @@ const AboutSection = () => {
     >
       <motion.h1
         className="section-heading"
-        initial={{ x: 50 }}
+        initial={{ x: 100 }}
         whileInView={{ x: 0 }}
         transition={{ duration: 1 }}
         viewport={{ once: false }}
@@ -21,7 +21,7 @@ const AboutSection = () => {
         About
       </motion.h1>
       <motion.p
-        initial={{ opacity: 0, x: -50 }}
+        initial={{ opacity: 0, x: -100 }}
         whileInView={{ opacity: 1, x: 0 }}
         transition={{ duration: 1 }}
         viewport={{ once: false }}
