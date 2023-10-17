@@ -115,6 +115,7 @@
         height: 10rem !important;
         background-color: var(--black);
         border-radius: 0.5rem !important;
+        opacity: 0.2 !important;
     }
 
     .project .external-link-logo {

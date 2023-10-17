@@ -4,7 +4,7 @@ import { BiHeart } from "react-icons/bi";
 
 const FooterSection = () => {
   return (
-    <div className="footer-section">
+    <div className="footer-section" id="contact">
       {/* <div className="footer-links-section">
         <a href="https://github.com/sudheer2144" target="_blank">
           <span className="effect"></span>

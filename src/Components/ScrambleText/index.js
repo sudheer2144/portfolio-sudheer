@@ -12,7 +12,7 @@ const ScrambleComponent = ({ text }) => {
         text={text}
         steps={[
           {
-            roll: 30,
+            roll: 20,
             action: "+",
             type: "random",
           },

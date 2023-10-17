@@ -7,9 +7,7 @@ import podcasts from "../../project images/podcasts.png";
 import cryptoZonedark from "../../project images/cryptoZone-dark.png";
 import cryptoZoneLight from "../../project images/cryptoZone-light.png";
 import { themeContext } from "../../ThemeContext";
-import { AnimatePresence } from "framer-motion";
 import { BiLinkExternal } from "react-icons/bi";
-// import { ThemeContext } from "@emotion/react";
 
 const ProjectSection = () => {
   const { theme } = useContext(themeContext);

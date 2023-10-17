@@ -1,7 +1,6 @@
-import { createContext, useState } from "react";
+import { useState } from "react";
 import "./App.css";
 import AboutSection from "./Components/About";
-import ContactSection from "./Components/Contact";
 import EducationComponent from "./Components/Education";
 import FooterSection from "./Components/Footer";
 import Header from "./Components/Header";
@@ -22,7 +21,6 @@ function App() {
         <EducationComponent />
         <WorkSection />
         <ProjectSection />
-        {/* <ContactSection /> */}
         <FooterSection />
       </div>
     </themeContext.Provider>

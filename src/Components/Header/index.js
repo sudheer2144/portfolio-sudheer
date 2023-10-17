@@ -1,4 +1,4 @@
-import React, { createContext, useContext, useEffect, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import "./style.css";
 import { motion } from "framer-motion";
 import BurgerMenuComponent from "../BurgerMenu/BurgerMenu";
@@ -8,7 +8,7 @@ import { BsFillLightbulbFill, BsFillLightbulbOffFill } from "react-icons/bs";
 import { themeContext } from "../../ThemeContext";
 
 const Header = () => {
-  const { theme, setTheme } = useContext(themeContext);
+  const { setTheme } = useContext(themeContext);
 
   //
   const [ShowNameHeader, setShowNameHeader] = useState(false);
@@ -101,14 +101,14 @@ const Header = () => {
           >
             Projects
           </motion.a>
-          {/* <motion.a
-          href="#contact"
-          initial={{ opacity: 0, x: 50 }}
-          animate={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.3, delay: 1 }}
-        >
-          Contact
-        </motion.a> */}
+          <motion.a
+            href="#contact"
+            initial={{ opacity: 0, x: 50 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.3, delay: 1 }}
+          >
+            Contact
+          </motion.a>
         </div>
         <motion.div
           className="burger-menu-container"

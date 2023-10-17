@@ -6,12 +6,14 @@
     align-items: center;
     color: var(--fixed-white) !important;
     overflow: hidden;
+    height: 2rem;
 }
 
 
 .burger-menu .bar {
     border: 2px solid var(--fixed-white);
     width: 2rem;
+    /* height: 2rem; */
     border-radius: 0.5rem;
     transition: all 0.3s;
 }
