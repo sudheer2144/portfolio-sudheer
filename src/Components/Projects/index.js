@@ -48,12 +48,14 @@ const ProjectSection = () => {
             className="project-img"
           />
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas
-            harum excepturi quae, id praesentium ratione maiores alias
-            architecto quos! Amet est illum voluptatum similique, ad vero
-            explicabo eius, ut repudiandae officia ea nulla? Necessitatibus
-            cupiditate odit aut animi ea amet? Ipsa unde natus quibusdam,
-            corporis velit aspernatur eaque aliquid obcaecati!
+            This is a ReactJs based Web Application built to show the top 100
+            crypto currencies with their price, increased or decreased
+            percentage, total market cap, total volume and a chart representing
+            the ups and downs of the currency for the given days. Using realtime
+            API.
+          </p>
+          <p className="stack">
+            Frontend: ReactJs, Redux, CSS, Material UI, Framer Motion.
           </p>
         </motion.div>
         <motion.div
@@ -77,13 +79,12 @@ const ProjectSection = () => {
             className="project-img"
           />
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas
-            harum excepturi quae, id praesentium ratione maiores alias
-            architecto quos! Amet est illum voluptatum similique, ad vero
-            explicabo eius, ut repudiandae officia ea nulla? Necessitatibus
-            cupiditate odit aut animi ea amet? Ipsa unde natus quibusdam,
-            corporis velit aspernatur eaque aliquid obcaecati!
+            This is a Full Stack Web Application created using MERN stack in
+            which the users can view blogs and can be updated or deleted by the
+            creater of that blog.
           </p>
+          <p className="stack">Frontend: ReactJs, Redux, CSS, Framer Motion.</p>
+          <p className="stack">Backend: NodeJs, ExpressJs, MongoDB.</p>
         </motion.div>
         <motion.div
           className="project"
@@ -102,13 +103,12 @@ const ProjectSection = () => {
           </span>
           <img src={podcasts} alt="" className="project-img" />
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas
-            harum excepturi quae, id praesentium ratione maiores alias
-            architecto quos! Amet est illum voluptatum similique, ad vero
-            explicabo eius, ut repudiandae officia ea nulla? Necessitatibus
-            cupiditate odit aut animi ea amet? Ipsa unde natus quibusdam,
-            corporis velit aspernatur eaque aliquid obcaecati!
+            A React based Web Application in which user can create, delete, play
+            podcasts and the authentication and authorization is performed using
+            firebase.
           </p>
+          <p className="stack">Frontend: ReactJs, Redux, CSS.</p>
+          <p className="stack">Backend: Firebase.</p>
         </motion.div>
       </div>
     </div>
