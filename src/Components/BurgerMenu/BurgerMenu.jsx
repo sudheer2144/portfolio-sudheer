@@ -8,6 +8,7 @@ const BurgerMenuComponent = () => {
 
   function changeToCross() {
     burgerMenuRef.current.classList.toggle("change");
+    document.body.classList.toggle("blur-all");
     setShowPaper(!showPaper);
   }
 
@@ -40,7 +41,7 @@ const BurgerMenuComponent = () => {
               href="#education"
               initial={{ x: 200 }}
               animate={{ x: 0 }}
-              transition={{ duration: 0.2, delay: 0.2 }}
+              transition={{ duration: 0.2, delay: 0.15 }}
               onClick={changeToCross}
             >
               Education
@@ -49,7 +50,7 @@ const BurgerMenuComponent = () => {
               href="#work"
               initial={{ x: 200 }}
               animate={{ x: 0 }}
-              transition={{ duration: 0.2, delay: 0.4 }}
+              transition={{ duration: 0.2, delay: 0.25 }}
               onClick={changeToCross}
             >
               Work
@@ -58,7 +59,7 @@ const BurgerMenuComponent = () => {
               href="#projects"
               initial={{ x: 200 }}
               animate={{ x: 0 }}
-              transition={{ duration: 0.2, delay: 0.6 }}
+              transition={{ duration: 0.2, delay: 0.35 }}
               onClick={changeToCross}
             >
               Projects
@@ -67,7 +68,7 @@ const BurgerMenuComponent = () => {
               href="#contact"
               initial={{ opacity: 0, x: 200 }}
               animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.2, delay: 0.8 }}
+              transition={{ duration: 0.2, delay: 0.45 }}
               onClick={changeToCross}
             >
               Contact

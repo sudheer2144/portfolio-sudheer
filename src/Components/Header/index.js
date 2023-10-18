@@ -64,10 +64,16 @@ const Header = () => {
         </motion.h1>
       </div>
       <div className="links-switch-section">
-        <div className="switch" onClick={changeMode}>
+        <motion.div
+          className="switch"
+          onClick={changeMode}
+          initial={{ opacity: 0, x: 50 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.3 }}
+        >
           {darkMode && <BsFillLightbulbFill className="switch-icon" />}
           {!darkMode && <BsFillLightbulbOffFill className="switch-icon" />}
-        </div>
+        </motion.div>
         <div className="links-section">
           <motion.a
             href="#about"
