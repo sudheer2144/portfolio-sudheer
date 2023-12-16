@@ -18,8 +18,8 @@ function App() {
         <Header />
         <MainSection />
         <AboutSection />
-        <EducationComponent />
         <WorkSection />
+        <EducationComponent />
         <ProjectSection />
         <FooterSection />
       </div>
