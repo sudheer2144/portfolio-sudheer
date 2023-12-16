@@ -1,6 +1,10 @@
 import React from "react";
 import "./style.css";
 import { motion } from "framer-motion";
+import javaLogo from "../../Images/logos/java.svg";
+import springLogo from "../../Images/logos/spring.svg";
+import reactLogo from "../../Images/logos/reactjs.svg";
+import nodejsLogo from "../../Images/logos/nodejs.svg";
 
 const AboutSection = () => {
   return (
@@ -30,6 +34,12 @@ const AboutSection = () => {
         in a challenging environment to prove my skills and utilizemy knowledge
         and intelligence in the growth of the organization.
       </motion.p>
+      <div className="glogos-section">
+        <img src={javaLogo} alt="" className="glogo" />
+        <img src={springLogo} alt="" className="glogo" />
+        <img src={reactLogo} alt="" className="glogo" />
+        <img src={nodejsLogo} alt="" className="glogo" />
+      </div>
     </motion.div>
   );
 };
