@@ -29,7 +29,7 @@ const FooterSection = () => {
         <p className="phone">
           Phone:{" "}
           <span className="pnone-num">
-            <span className="symb">+91</span>8500182144
+            <span className="symb">+91</span>9989835953
           </span>
         </p>
       </div>
