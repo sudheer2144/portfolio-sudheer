@@ -5,6 +5,8 @@ import javaLogo from "../../Images/logos/java.svg";
 import springLogo from "../../Images/logos/spring.svg";
 import reactLogo from "../../Images/logos/reactjs.svg";
 import nodejsLogo from "../../Images/logos/nodejs.svg";
+import mongodbLogo from "../../Images/logos/mongodb.svg";
+import sqlLogo from "../../Images/logos/mysql.svg";
 
 const AboutSection = () => {
   return (
@@ -39,6 +41,8 @@ const AboutSection = () => {
         <img src={springLogo} alt="" className="glogo" />
         <img src={reactLogo} alt="" className="glogo" />
         <img src={nodejsLogo} alt="" className="glogo" />
+        <img src={mongodbLogo} alt="" className="glogo" />
+        <img src={sqlLogo} alt="" className="glogo" />
       </div>
     </motion.div>
   );
