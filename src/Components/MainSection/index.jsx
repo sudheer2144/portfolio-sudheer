@@ -24,7 +24,7 @@ const MainSection = () => {
         transition={{ duration: 1 }}
         viewport={{ once: false }}
       >
-        <ScrambleComponent text="MERN-Stack Developer" />
+        <ScrambleComponent text="Full Stack Developer" />
       </motion.p>
       <div className="profiles-links-section">
         <motion.a
@@ -42,7 +42,7 @@ const MainSection = () => {
           whileInView={{ opacity: 1 }}
           transition={{ duration: 1 }}
           viewport={{ once: false }}
-          href="https://www.linkedin.com/in/sudheer-geddadi"
+          href="https://www.linkedin.com/in/geddadi-sudheer"
           target="_blank"
         >
           <BsLinkedin className="logos" />
