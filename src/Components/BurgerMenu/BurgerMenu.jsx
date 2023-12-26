@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import "./styles.css";
 import { AnimatePresence, motion } from "framer-motion";
 
@@ -23,9 +23,9 @@ const BurgerMenuComponent = () => {
         {showPaper && (
           <motion.div
             className="main-paper"
-            initial={{ x: 200 }}
+            initial={{ x: 400 }}
             animate={{ x: 0 }}
-            exit={{ x: 200 }}
+            exit={{ x: 400 }}
             transition={{ duration: 0.5 }}
           >
             <motion.a
