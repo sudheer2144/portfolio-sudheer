@@ -77,14 +77,14 @@ const Header = () => {
           {!darkMode && <BsFillLightbulbOffFill className="switch-icon" />}
         </motion.div>
         <div className="links-section">
-          <motion.a
+          {/* <motion.a
             href="#main-section"
             initial={{ opacity: 0, x: 50 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.3, delay: 0.2 }}
           >
             Home
-          </motion.a>
+          </motion.a> */}
           <motion.a
             href="#about"
             initial={{ opacity: 0, x: 50 }}
