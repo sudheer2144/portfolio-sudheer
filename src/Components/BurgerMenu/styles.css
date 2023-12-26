@@ -54,7 +54,8 @@
     padding: 0.5rem;
     border-radius: 1rem;
     transition: all 0.3s;
-    min-width: 8rem;
+    /* min-width: 8rem; */
+    width: 100%;
     text-align: center;
 }
 
