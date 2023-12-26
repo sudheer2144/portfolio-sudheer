@@ -12,7 +12,7 @@ const Header = () => {
 
   //
   const [ShowNameHeader, setShowNameHeader] = useState(false);
-  const [darkMode, setDarkMode] = useState(true);
+  const [darkMode, setDarkMode] = useState(fasle);
 
   window.addEventListener("scroll", checkScrollPosition);
   function checkScrollPosition() {
