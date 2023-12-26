@@ -50,8 +50,10 @@ const Header = () => {
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.5, delay: 0.8 }}
         >
-          {darkMode && <img src={logoDark} alt="" className="darkmode-img" />}
-          {!darkMode && <img src={logoLight} alt="" />}
+          {darkMode && (
+            <img src={logoDark} alt="logo-dark" className="darkmode-img" />
+          )}
+          {!darkMode && <img src={logoLight} alt="logo-light" />}
         </motion.div>
         <motion.h1
           className={`first-name ${ShowNameHeader && " show-name-header"}`}
