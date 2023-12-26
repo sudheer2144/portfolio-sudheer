@@ -36,8 +36,8 @@
 }
 
 .glogo {
-    width: 7rem !important;
-    height: 7rem !important;
+    width: 7rem;
+    height: 7rem;
 }
 
 @media screen and (max-width:1080px) {
@@ -52,7 +52,16 @@
     }
 
     .about-section p {
-        font-size: 1.5rem;
+        font-size: 1.2rem;
         width: 95%;
+    }
+
+    .glogos-section {
+        gap: 0.2rem;
+    }
+
+    .glogo {
+        width: 4rem;
+        height: 4rem;
     }
 }
