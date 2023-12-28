@@ -28,7 +28,7 @@ const BurgerMenuComponent = () => {
             exit={{ x: 400 }}
             transition={{ duration: 0.5 }}
           >
-            <motion.a
+            {/* <motion.a
               href="#main-section"
               initial={{ x: 200 }}
               animate={{ x: 0 }}
@@ -36,12 +36,12 @@ const BurgerMenuComponent = () => {
               onClick={changeToCross}
             >
               Home
-            </motion.a>
+            </motion.a> */}
             <motion.a
               href="#about"
               initial={{ x: 200 }}
               animate={{ x: 0 }}
-              transition={{ duration: 0.2, delay: 0.1 }}
+              transition={{ duration: 0.2, delay: 0 }}
               onClick={changeToCross}
             >
               About
@@ -50,7 +50,7 @@ const BurgerMenuComponent = () => {
               href="#work"
               initial={{ x: 200 }}
               animate={{ x: 0 }}
-              transition={{ duration: 0.2, delay: 0.2 }}
+              transition={{ duration: 0.2, delay: 0.1 }}
               onClick={changeToCross}
             >
               Work
@@ -59,7 +59,7 @@ const BurgerMenuComponent = () => {
               href="#education"
               initial={{ x: 200 }}
               animate={{ x: 0 }}
-              transition={{ duration: 0.2, delay: 0.3 }}
+              transition={{ duration: 0.2, delay: 0.2 }}
               onClick={changeToCross}
             >
               Education
@@ -68,7 +68,7 @@ const BurgerMenuComponent = () => {
               href="#projects"
               initial={{ x: 200 }}
               animate={{ x: 0 }}
-              transition={{ duration: 0.2, delay: 0.4 }}
+              transition={{ duration: 0.2, delay: 0.3 }}
               onClick={changeToCross}
             >
               Projects
@@ -77,7 +77,7 @@ const BurgerMenuComponent = () => {
               href="#contact"
               initial={{ opacity: 0, x: 200 }}
               animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.2, delay: 0.5 }}
+              transition={{ duration: 0.2, delay: 0.4 }}
               onClick={changeToCross}
             >
               Contact
