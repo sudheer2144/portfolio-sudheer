@@ -47,22 +47,22 @@ const BurgerMenuComponent = () => {
               About
             </motion.a>
             <motion.a
-              href="#education"
+              href="#work"
               initial={{ x: 200 }}
               animate={{ x: 0 }}
               transition={{ duration: 0.2, delay: 0.2 }}
               onClick={changeToCross}
             >
-              Education
+              Work
             </motion.a>
             <motion.a
-              href="#work"
+              href="#education"
               initial={{ x: 200 }}
               animate={{ x: 0 }}
               transition={{ duration: 0.2, delay: 0.3 }}
               onClick={changeToCross}
             >
-              Work
+              Education
             </motion.a>
             <motion.a
               href="#projects"
