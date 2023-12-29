@@ -33,7 +33,7 @@ const AboutSection = () => {
         viewport={{ once: false }}
       >
         Self-motivated and hardworking person with over 2 years of professional
-        experience specializing in web development, ReactJs, Spring Boot , Agile
+        experience specializing in web development, ReactJs, Spring Boot, Agile
         methodology, and testing. seeking for an opportunity to work in a
         challenging environment to prove my skills and utilizemy knowledge and
         intelligence in the growth of the organization.
