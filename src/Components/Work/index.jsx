@@ -2,6 +2,8 @@ import React from "react";
 import "./styles.css";
 import { motion } from "framer-motion";
 
+import allDetails from "../../All-Details-Object";
+
 const WorkSection = () => {
   return (
     <div className="work-section" id="work">
@@ -24,10 +26,11 @@ const WorkSection = () => {
         viewport={{ once: false }}
         className="tagline"
       >
-        Software Engineer (Full Stack)
+        {allDetails.work.role}
       </motion.p>
       <p className="comp">
-        MEDIA WAVE TECHNOLOGIES<span>{"[Aug-2021 to Present]"}</span>
+        {allDetails.work.company}
+        <span>{allDetails.work.duration}</span>
       </p>
       <motion.div
         className="line-container"
@@ -36,20 +39,10 @@ const WorkSection = () => {
         transition={{ duration: 1 }}
         viewport={{ once: false }}
       >
-        <p className="lines">
-          -{">"} 2.4 Years hands on experience as Full Stack Developer
-        </p>
-        <p className="lines">
-          -{">"} Hands on experience on ReactJs based UI development
-        </p>
-        <p className="lines">
-          -{">"} Hands on experience on Java based server-side development with
-          Spring Boot
-        </p>
-        <p className="lines">
-          -{">"} Hands on experience on Server-side Database Management with
-          MySQLWorkbench.
-        </p>
+        <p className="lines">{allDetails.work.points.p1}</p>
+        <p className="lines">{allDetails.work.points.p2}</p>
+        <p className="lines">{allDetails.work.points.p3}</p>
+        <p className="lines">{allDetails.work.points.p4}</p>
       </motion.div>
     </div>
   );
