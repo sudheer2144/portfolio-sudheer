@@ -23,13 +23,13 @@ const FooterSection = () => {
         <p className="mail-address">
           Email:{" "}
           <span className="mail">
-            sudheer.ged<span className="symb">@</span>mail.com
+            geddadisudheer<span className="symb">@</span>gmail.com
           </span>
         </p>
         <p className="phone">
           Phone:{" "}
           <span className="pnone-num">
-            <span className="symb">+91</span>9989835953
+            <span className="symb">(+91)-</span>9989835953
           </span>
         </p>
       </div>
