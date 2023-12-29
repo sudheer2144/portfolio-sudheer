@@ -8,6 +8,8 @@ import nodejsLogo from "../../Images/logos/nodejs.svg";
 import mongodbLogo from "../../Images/logos/mongodb.svg";
 import sqlLogo from "../../Images/logos/mysql.svg";
 
+import allDetails from "../../All-Details-Object";
+
 const AboutSection = () => {
   return (
     <motion.div
@@ -32,11 +34,7 @@ const AboutSection = () => {
         transition={{ duration: 1 }}
         viewport={{ once: false }}
       >
-        Self-motivated and hardworking person with over 2 years of professional
-        experience specializing in web development, ReactJs, Spring Boot, Agile
-        methodology, and testing. seeking for an opportunity to work in a
-        challenging environment to prove my skills and utilizemy knowledge and
-        intelligence in the growth of the organization.
+        {allDetails.about}
       </motion.p>
       <div className="glogos-section">
         <img src={javaLogo} alt="" className="glogo" />
