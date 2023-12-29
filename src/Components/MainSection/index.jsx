@@ -7,6 +7,8 @@ import { BsGithub, BsLinkedin } from "react-icons/bs";
 import { BiLinkExternal } from "react-icons/bi";
 import resumeImage from "../../Images/image.png";
 
+import allDetails from "../../All-Details-Object";
+
 const MainSection = () => {
   return (
     <div className="main-section" id="main-section">
@@ -16,7 +18,7 @@ const MainSection = () => {
         transition={{ duration: 1 }}
         viewport={{ once: false }}
       >
-        Sudheer Geddadi
+        {allDetails.personalDetails.name}
       </motion.h1>
       <motion.p
         initial={{ opacity: 0, x: 100 }}
@@ -24,7 +26,7 @@ const MainSection = () => {
         transition={{ duration: 1 }}
         viewport={{ once: false }}
       >
-        <ScrambleComponent text="Full Stack Developer" />
+        <ScrambleComponent text={allDetails.personalDetails.desig} />
       </motion.p>
       <div className="profiles-links-section">
         <motion.a
@@ -32,7 +34,7 @@ const MainSection = () => {
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 1 }}
           viewport={{ once: false }}
-          href="https://github.com/sudheer2144"
+          href={allDetails.personalDetails.socialLinks.github}
           target="_blank"
         >
           <BsGithub className="logos" />
@@ -42,7 +44,7 @@ const MainSection = () => {
           whileInView={{ opacity: 1 }}
           transition={{ duration: 1 }}
           viewport={{ once: false }}
-          href="https://www.linkedin.com/in/geddadi-sudheer"
+          href={allDetails.personalDetails.socialLinks.linkedin}
           target="_blank"
         >
           <BsLinkedin className="logos" />
@@ -52,7 +54,7 @@ const MainSection = () => {
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 1 }}
           viewport={{ once: false }}
-          href="https://leetcode.com/sudheer2144/"
+          href={allDetails.personalDetails.socialLinks.leetcode}
           target="_blank"
         >
           <SiLeetcode className="logos" />
