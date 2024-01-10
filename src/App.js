@@ -18,7 +18,7 @@ function App() {
         <Header />
         <MainSection />
         <AboutSection />
-        <WorkSection />
+        {/* <WorkSection /> */}
         <EducationComponent />
         <ProjectSection />
         <FooterSection />
