@@ -46,7 +46,7 @@ const BurgerMenuComponent = () => {
             >
               About
             </motion.a>
-            <motion.a
+            {/* <motion.a
               href="#work"
               initial={{ x: 200 }}
               animate={{ x: 0 }}
@@ -54,7 +54,7 @@ const BurgerMenuComponent = () => {
               onClick={changeToCross}
             >
               Work
-            </motion.a>
+            </motion.a> */}
             <motion.a
               href="#education"
               initial={{ x: 200 }}
